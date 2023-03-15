@@ -8,7 +8,18 @@ const Button = ({ children, color }) => {
   const buttonColor = colors[color] || colors.primary;
 
   return (
-    <button style={{ backgroundColor: buttonColor }}>
+    <button
+      style={{
+        backgroundColor: buttonColor,
+        borderradius: '25px',
+        padding: '10px',
+        margin: '10px',
+        borderRadius: '5px',
+        border: 'none',
+        color: 'white',
+        display: 'inline-block',
+      }}
+    >
       {children}
     </button>
   );
